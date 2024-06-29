@@ -93,7 +93,7 @@ flashed onto a Tock board. It does three main things:
 1. Extracts the various sections in each .elf file and creates a binary file
    per .elf from the sections.
 2. Prepends a
-   [Tock Binary Format](https://github.com/tock/tock/blob/master/doc/Compilation.md#tock-binary-format)
+   [Tock Binary Format](https://book.tockos.org/doc/tock_binary_format)
    header to each binary.
 3. Creates the TAB file by creating a tar file with each of the Tock binaries.
 
@@ -180,7 +180,7 @@ An example looks like this:
 After generating the program binary and TBF header for each .elf file specified
 in the command line, elf2tab will store those files along side the .elf files
 (using the `.tbf` extension), and create a [TAB
-file](https://github.com/tock/tock/blob/master/doc/Compilation.md#tock-application-bundle)
+file](https://book.tockos.org/doc/compilation#tock-application-bundle)
 containing each .tbf file. These .tab files are used by tools like Tockloader to
 load Tock apps on to boards.
 
